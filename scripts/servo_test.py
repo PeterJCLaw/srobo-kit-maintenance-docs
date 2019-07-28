@@ -145,6 +145,8 @@ def main() -> None:
                 time.sleep(0.5)
         except KeyboardInterrupt:
             pass
+        except usb.core.USBError as e:
+            print(e)
 
 
 if __name__ == "__main__":
